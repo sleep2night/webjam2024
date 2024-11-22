@@ -32,14 +32,14 @@ input[type="file"]:hover {
 }
 
 #imageContainer {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 10px;
-  justify-content: center;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 #imageContainer img {
-  width: 150px;
+  width: 200px;
   height: auto;
   cursor: pointer;
   border-radius: 8px;
