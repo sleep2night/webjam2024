@@ -1,0 +1,269 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(
+    135deg,
+    /* #69a7e9,
+    #95c8ff,
+    #9ccafc,
+    #dab4ff,
+    #cda2f8,
+    #a775da */
+      #7eb6f1,
+    #4087d4,
+    #a775da,
+    #c48ff9
+  );
+  background-size: cover;
+  background-attachment: fixed; /* Fix background while scrolling */
+  color: #333; /* Text color */
+}
+
+.header-image {
+  display: block; /* Makes it a block element */
+  margin: 0 auto; /* Centers it horizontally */
+  max-width: 100%; /* Ensures the image does not exceed the container width */
+  height: auto; /* Maintains the aspect ratio */
+  max-height: 300px; /* Optional: Limits the height to 300px or any size you prefer */
+  object-fit: cover; /* Ensures the image scales nicely */
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent navbar */
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar li a:hover {
+  background-color: #4caf50; /* Green on hover */
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Home Page Title and Subtitle */
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Text shadow for emphasis */
+  margin-top: 80px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #fff;
+  margin-top: 10px;
+  font-style: italic;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3); /* Soft text shadow */
+}
+
+/* Image Input Button */
+input[type="file"] {
+  padding: 12px;
+  background-color: #e471d5d6;
+  color: rgb(3, 13, 60);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 30px auto;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+input[type="file"]:hover {
+  background-color: #b1670cd6;
+}
+
+/* Image Gallery */
+#imageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#imageContainer img {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#imageContainer img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal Styles */
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#modal img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+#modalClose {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Add some space and clean up layout */
+#uploaded-image {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end; /* Moves items to the right */
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Align items horizontally */
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Register Page Styles */
+.register-container {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto; /* Centers the register form */
+}
+
+.register-container h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Login Page Styles */
+.login-container {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto; /* Centers the login form */
+}
+
+.login-container h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Form Elements */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #4caf50; /* Green focus border */
+}
