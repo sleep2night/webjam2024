@@ -1,0 +1,3 @@
+db = {
+    "PetrEnthusiast":["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg","images/5.jpg","images/6.jpg","images/7.jpg","images/20241122_151748.jpg", "images/20241122_151751.jpg", "images/20241122_151758.jpg","images/20241122_151804.jpg","images/20241122_151815.jpg","images/20241122_151833.jpg","images/20241122_151839.jpg","images/20241122_151844.jpg","images/20241122_151848.jpg","images/20241122_151852.jpg","images/20241122_151909.jpg"]
+    }

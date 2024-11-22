@@ -1,6 +1,9 @@
 from flask import Flask, render_template, request
+from temp_db import db
 
 app = Flask(__name__)
+
+
 
 @app.route('/')
 def home():
@@ -24,11 +27,11 @@ def collection():
         # Get the username from the form submission
         username = request.form.get('username')
         
-        if username:
+        if username and username in db:
             # Redirect to the user-specific collection page
-            return render_template('user_profile.html', username=username)
+            return render_template('user_profile.html', username=username, images=db[username])
         else:
-            return "Username is required", 400
+            return "User not found!", 400
     
     return render_template('collection.html')
 

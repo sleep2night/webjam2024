@@ -21,7 +21,15 @@
     </h1>
     <!-- User-specific content goes here -->
 
-    <div id="imageContainer"></div>
+    <div id="imageContainer">
+      {% for image in images %}
+      <img
+        src="{{ url_for('static', filename=image) }}"
+        alt="Image for {{ username }}"
+        onclick="previewImage(this)"
+      />
+      {% endfor %}
+    </div>
 
     <!-- Div for image preview -->
     <div id="modal">
