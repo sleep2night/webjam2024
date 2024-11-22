@@ -2,20 +2,32 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #6D9DC5, #A9C9D6); /* Gradient Background */
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(
+    135deg,
+    /* #69a7e9,
+    #95c8ff,
+    #9ccafc,
+    #dab4ff,
+    #cda2f8,
+    #a775da */
+      #7eb6f1,
+    #4087d4,
+    #a775da,
+    #c48ff9
+  );
   background-size: cover;
   background-attachment: fixed; /* Fix background while scrolling */
   color: #333; /* Text color */
 }
 
 .header-image {
-  display: block;              /* Makes it a block element */
-  margin: 0 auto;              /* Centers it horizontally */
-  max-width: 100%;             /* Ensures the image does not exceed the container width */
-  height: auto;                /* Maintains the aspect ratio */
-  max-height: 300px;           /* Optional: Limits the height to 300px or any size you prefer */
-  object-fit: cover;           /* Ensures the image scales nicely */
+  display: block; /* Makes it a block element */
+  margin: 0 auto; /* Centers it horizontally */
+  max-width: 100%; /* Ensures the image does not exceed the container width */
+  height: auto; /* Maintains the aspect ratio */
+  max-height: 300px; /* Optional: Limits the height to 300px or any size you prefer */
+  object-fit: cover; /* Ensures the image scales nicely */
 }
 
 /* Navigation Bar */
@@ -50,7 +62,7 @@ body {
 }
 
 .navbar li a:hover {
-  background-color: #4CAF50; /* Green on hover */
+  background-color: #4caf50; /* Green on hover */
   color: white;
   transform: scale(1.1);
 }
@@ -77,8 +89,8 @@ body {
 /* Image Input Button */
 input[type="file"] {
   padding: 12px;
-  background-color: #4CAF50;
-  color: white;
+  background-color: #e471d5d6;
+  color: rgb(3, 13, 60);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -88,7 +100,7 @@ input[type="file"] {
 }
 
 input[type="file"]:hover {
-  background-color: #45a049;
+  background-color: #b1670cd6;
 }
 
 /* Image Gallery */
@@ -154,7 +166,6 @@ input[type="file"]:hover {
   max-width: 100%;
   height: auto;
 }
-
 
 /* Navigation Bar */
 .navbar {
@@ -238,7 +249,8 @@ label {
   color: #555;
 }
 
-input[type="text"],input[type="email"],
+input[type="text"],
+input[type="email"],
 input[type="password"] {
   width: 100%;
   padding: 10px;
@@ -250,7 +262,8 @@ input[type="password"] {
   transition: border-color 0.3s;
 }
 
-input[type="text"]:focus, input[type="email"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
 input[type="password"]:focus {
-  border-color: #4CAF50; /* Green focus border */
+  border-color: #4caf50; /* Green focus border */
 }
