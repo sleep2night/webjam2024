@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ username }}'s Profile</title>
+    <link rel="stylesheet" href="./static/styles.css" />
+    <script src="./static/scripts.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="/">Home</a></li>
+      </ul>
+    </nav>
+
+    <h1 class="subtitle">
+      {{ username }}'s Petr Collection!!
+      <br />
+    </h1>
+    <!-- User-specific content goes here -->
+
+    <div id="imageContainer"></div>
+
+    <!-- Div for image preview -->
+    <div id="modal">
+      <button id="modalClose" onclick="closeModal()">X</button>
+      <img id="modalImage" src="" alt="Enlarged Image" />
+    </div>
+  </body>
+</html>

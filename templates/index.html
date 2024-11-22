@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petr Trader</title>
+    <link rel="stylesheet" href="./static/styles.css" />
+    <script src="./static/scripts.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div id="searchForm">
+        <form action="{{ url_for('collection') }}" method="post">
+          <input
+            type="text"
+            id="searchUsername"
+            name="username"
+            placeholder="Search collections..."
+          />
+        </form>
+      </div>
+      <ul>
+        <li><a href="/collection">My Collection</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+      </ul>
+    </nav>
+
+    <img
+      id="petr"
+      src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Trombone_petr.png"
+      alt="Trombone Petr"
+      class="header-image"
+    />
+    <h1 class="title">Petr Gallery</h1>
+    <p class="subtitle">Show off your petrs here!</p>
+  </body>
+</html>
